@@ -11,8 +11,6 @@ export function TwitterFollowCard( { userName, children }) {
     // const isFollowing = state[0]
     // const setIsFollowing = state[1]
     
-    
-    
     const text = isFollowing ? 'Siguiendo' : 'Seguir'
 
     const buttonClassName = isFollowing 
