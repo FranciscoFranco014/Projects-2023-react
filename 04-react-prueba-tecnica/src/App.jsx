@@ -30,7 +30,8 @@ const [sort, setSort] = useState(false)
 const {search, updateSearch, error} = useSearch()
 const { movies,loading, getMovies } = useMovies({search, sort})
 
-const debouncedGetMovies = useCallback(
+// eslint-disable-next-line react-hooks/exhaustive-deps
+const debouncedGetMovies = useCallback (
   debounce(search =>{
   console.log('search', search)
 }, 500)
@@ -61,6 +62,7 @@ const handleChange = (event) => {
     <div className='page'>
 
       <header >
+        <img className="icon"src="./src/assets/popcorn.png" alt="icon" />
         <h1>Movie Finder</h1>
         <form className='form' onSubmit={handleSubmit}>
           <input onChange={handleChange} value={search} name="query" type="text" id="" placeholder='Harry Potter, Avengers, El Hobbit...' />

@@ -60,3 +60,18 @@ h1{
 }
 
 
+ .icon{
+    /* display: flex; */
+    /* justify-content: start; */
+    /* align-items:left; */
+    max-width: 60px;
+    float: left;
+    padding: 30 15px;
+    margin-top: 5px;
+    margin-right: -70px;
+}
+
+/* header, img, h1{
+    padding: 0 15px;
+    float: left;
+} */
