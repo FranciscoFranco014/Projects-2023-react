@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+
 function RenderMovies({ movies }) {
     return(
     <ul className="movies">
